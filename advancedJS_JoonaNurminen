@@ -1,0 +1,74 @@
+// Määritellään muuttujat
+
+var t= "Vastaus on oikein!" ;
+var f= "Vastaus on väärin! Oikea vastaus on " ;
+
+let answer1 = document.getElementById("answer1") ;
+let answer2 = document.getElementById("answer2") ;
+let answer3 = document.getElementById("answer3") ;
+let answer4 = document.getElementById("answer4") ;
+let answer5 = document.getElementById("answer5") ;
+
+let tulokset = document.getElementById("tulokset") ;
+
+var c=0;
+
+//tehdään funktio, joka laskee onko vastaus oikein vai väärin
+
+function check() {
+
+    var q1 = document.quiz.q1.value ;
+
+    if (q1=="40") {{c++}
+        (answer1.innerHTML = t)
+    } else {
+        answer1.innerHTML = f + "a) 40" ;
+    }
+
+
+
+    var q2 = document.quiz.q2.value ;
+
+    if (q2=="443") {{c++}
+        (answer2.innerHTML = t)
+    } else {
+        answer2.innerHTML = f + "c) 443";
+    }
+
+
+
+    var q3 = document.quiz.q3.value ;
+
+    if (q3=="9") {{c++}
+        (answer3.innerHTML = t)
+    } else {
+        answer3.innerHTML = f + "c) 9";
+    }
+
+
+
+    var q4 = document.quiz.q4.value ;
+
+    if (q4=="65") {{c++}
+        (answer4.innerHTML = t)
+    } else {
+        answer4.innerHTML = f + "b) 65";
+    }
+
+
+
+    var q5 = document.quiz.q5.value ;
+
+    if (q5=="80") {{c++}
+        (answer5.innerHTML = t)
+    } else {
+        answer5.innerHTML = f + "a) 80";
+    }
+
+    //Tulostetaan oikeiden vastausten määrä
+
+    tulokset.innerHTML = ("Oikeita vastauksia: " + c + "/5") ;
+
+}
+
+
